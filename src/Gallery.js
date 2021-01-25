@@ -45,7 +45,7 @@ export default function Gallery() {
   ];
 
   return (
-    <div className="grid grid-cols-2 gap-4 mb-16">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-16">
       {coffees.map((coffee) => (
         <GalleryItem
           image={coffee.image}
