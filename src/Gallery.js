@@ -1,53 +1,14 @@
 import Image from "next/image";
+import useCoffees from "../src/use-coffees";
 
 export default function Gallery() {
-  const coffees = [
-    {
-      image: "/vercel.svg",
-      name: "El Sauce",
-      country: "Peru",
-      notes: ["Cherry", "Honeycomb", "Cranberry"],
-      properties: [
-        {
-          label: "Variedad/es",
-          value: "Pluma",
-        },
-        {
-          label: "Variedad/es",
-          value: "Pluma",
-        },
-        {
-          label: "Variedad/es",
-          value: "Pluma",
-        },
-      ],
-    },
-    {
-      image: "/vercel.svg",
-      name: "El Sauce",
-      country: "Peru",
-      notes: ["Cherry", "Honeycomb", "Cranberry"],
-      properties: [
-        {
-          label: "Variedad/es",
-          value: "Pluma",
-        },
-        {
-          label: "Variedad/es",
-          value: "Pluma",
-        },
-        {
-          label: "Variedad/es",
-          value: "Pluma",
-        },
-      ],
-    },
-  ];
+  const coffees = useCoffees();
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-16">
       {coffees.map((coffee) => (
         <GalleryItem
+          href={coffee.href}
           image={coffee.image}
           name={coffee.name}
           country={coffee.country}
@@ -59,10 +20,10 @@ export default function Gallery() {
   );
 }
 
-function GalleryItem({ image, name, country, notes, properties }) {
+function GalleryItem({ href, image, name, country, notes, properties }) {
   return (
-    <a href="https://nextjs.org/docs">
-      <div className="p-6 shadow-lg hover:shadow-2xl leading-none rounded-lg">
+    <a href={href}>
+      <div className="transition-all p-6 shadow-lg hover:shadow-2xl leading-none rounded-lg">
         <div className="w-full h-96 mb-6 bg-gray-200 overflow-hidden rounded-lg">
           <img src={image} alt={name} layout="fill" />
         </div>
@@ -82,15 +43,36 @@ function GalleryItem({ image, name, country, notes, properties }) {
               ))}
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4 mb-6">
             {properties.map((property) => (
               <div>
                 <p className="text-sm">
-                  <span className="text-gray-500">{property.label}</span>{" "}
+                  <span className="text-gray-500">{property.label}:</span>{" "}
                   {property.value}
                 </p>
               </div>
             ))}
+          </div>
+          <div className="border-t border-gray-100 pt-4">
+            <a href={href}>
+              <button class="transition-all hover:bg-secondary hover:bg-opacity-10 hover:text-secondary font-bold py-2 px-3 rounded inline-flex items-center">
+                <span>Revisa en la tienda</span>
+                <svg
+                  className="fill-current w-4 h-4 ml-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </button>
+            </a>
           </div>
         </div>
       </div>
