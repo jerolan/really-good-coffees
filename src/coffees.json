@@ -1,0 +1,145 @@
+[
+  {
+    "href": "https://shop.squaremilecoffee.com/",
+    "image": "/el_desvelado.jpg",
+    "name": "El Desvelado",
+    "country": "Colombia",
+    "notes": ["Mandarina", "Uva", "Jalea"],
+    "properties": [
+      {
+        "label": "Variedades",
+        "value": "Castillo y Colombia"
+      },
+      {
+        "label": "Altitud",
+        "value": "1900"
+      },
+      {
+        "label": "Proceso",
+        "value": "Lavado"
+      }
+    ]
+  },
+  {
+    "href": "https://shop.squaremilecoffee.com/",
+    "image": "/el_eucalipto.jpg",
+    "name": "El Eucalipto",
+    "country": "Peru",
+    "notes": ["Manzana", "Jarabe de Maple", "Fruta de la Pasión"],
+    "properties": [
+      {
+        "label": "Variedades",
+        "value": "Bourbon y Caturra"
+      },
+      {
+        "label": "Altitud",
+        "value": "1800"
+      },
+      {
+        "label": "Proceso",
+        "value": "Lavado"
+      }
+    ]
+  },
+  {
+    "href": "https://www.terresdecafe.com/en/coffee-blends/1073-17781-10-blend.html#/33-coffee_packaging-250gr/79-grinding-beans",
+    "image": "https://www.terresdecafe.com/3699-large_default/10-blend.jpg",
+    "name": "10 Blend",
+    "country": "Etiopia",
+    "notes": ["Cocoa", "Frutal", "Miel"],
+    "properties": [
+      {
+        "label": "Blend",
+        "value": "Ethiopia, Uganda y Burundi"
+      },
+      {
+        "label": "Proceso",
+        "value": "Fermentación Natural"
+      }
+    ]
+  },
+  {
+    "href": "https://store.manifesto.mx/collections/manifesto-reserve/products/finca-chelin-geisha-hidronatural-natural",
+    "image": "https://cdn.shopify.com/s/files/1/2010/1115/products/CHELIN_1_78ee7f54-422a-49cf-a295-8ba4be54c2d9_1024x1024@2x.jpg?v=1604079280",
+    "name": "Finca Chelín Geisha",
+    "country": "México",
+    "notes": ["Té Negro", "Manzana", "Frambuesa"],
+    "properties": [
+      {
+        "label": "Blend",
+        "value": "Oaxaca y Veracruz"
+      },
+      {
+        "label": "Altitud",
+        "value": "1850"
+      },
+      {
+        "label": "Proceso",
+        "value": "Hidronatural natural"
+      }
+    ]
+  },
+  {
+    "href": "https://store.manifesto.mx/collections/venta-de-cafe-de-especialidad-a-domicilio/products/mezzogiorno-special-blend",
+    "image": "https://cdn.shopify.com/s/files/1/2010/1115/products/EmpaqueMEZ_530x@2x.jpg?v=1590601153",
+    "name": "Blend Mezzogiorno",
+    "country": "México",
+    "notes": ["Chocolate", "Caramelo", "Avellanas", "Ccereza"],
+    "properties": [
+      {
+        "label": "Variedad",
+        "value": "Pluma, Sarchimores y Obata"
+      },
+      {
+        "label": "Blend",
+        "value": "Oaxaca y Veracruz"
+      },
+      {
+        "label": "Altitud",
+        "value": "1250-1400"
+      },
+      {
+        "label": "Proceso",
+        "value": "Lavado"
+      }
+    ]
+  },
+  {
+    "href": "https://gasup.com.mx/products/cafe-de-chiapas-finca-santa-rosa",
+    "image": "https://cdn.shopify.com/s/files/1/0355/5557/3804/products/cafe-de-chiapas-finca-santa-rosa-proceso-natural-157447_1080x.jpg?v=1599134527",
+    "name": "Finca santa rosa",
+    "country": "México",
+    "notes": ["Mora azul", "Frambuesa"],
+    "properties": [
+      {
+        "label": "Variedad",
+        "value": "Typica, Borbón"
+      },
+      {
+        "label": "Altitud",
+        "value": "1370"
+      },
+      {
+        "label": "Proceso",
+        "value": "Natural"
+      }
+    ]
+  },
+  {
+    "href": "https://gasup.com.mx/products/san-nicolas-pequenos-productores",
+    "image": "https://cdn.shopify.com/s/files/1/0355/5557/3804/products/cafe-de-hidalgo-otomi-tepehua-485040_1080x.jpg?v=1598982980",
+    "name": "Otomi Tepehua",
+    "country": "México",
+    "notes": ["Chocolate Obscuro"],
+    "properties": [
+      {
+        "label": "Variedad",
+        "value": "Typica, Bourbón, Marsellesa"
+      },
+      {
+        "label": "Proceso",
+        "value": "Natural Maceración Carbónica"
+      }
+    ]
+  }
+]
