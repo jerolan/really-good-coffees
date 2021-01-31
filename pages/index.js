@@ -17,7 +17,6 @@ export default function Home({ coffees }) {
 export async function getStaticProps({ params }) {
   const coffees = await fetchCoffees();
 
-  console.log({ coffees });
   return {
     props: {
       coffees,
