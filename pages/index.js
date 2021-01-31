@@ -1,5 +1,5 @@
 import Hero from "../rgc/hero";
-import Gallery from "../rgc/gallery";
+import CoffeeList from "../rgc/coffee-list";
 
 import fetchCoffees from "../prismic/fetchCoffees";
 
@@ -9,7 +9,7 @@ export default function Home({ coffees }) {
       <div className="mb-12 py-16">
         <Hero />
       </div>
-      <Gallery coffees={coffees} />
+      <CoffeeList coffees={coffees} />
     </main>
   );
 }
