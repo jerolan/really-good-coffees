@@ -11,14 +11,9 @@ export default function GalleryItem({
   return (
     <a href={href}>
       <div className="transition-all p-6 shadow-lg hover:shadow-2xl leading-none rounded-lg  dark:bg-gray-900">
-        <div className="w-full h-96 mb-6 bg-secondary overflow-hidden rounded-lg">
+        <div className="relative w-full h-96 mb-6 bg-secondary overflow-hidden rounded-lg">
           {image ? (
-            <Image
-              height={image.height}
-              width={image.width}
-              src={image.url}
-              alt={name}
-            />
+            <Image layout="fill" src={image.url} alt={name} objectFit="cover" />
           ) : null}
         </div>
         <div>
