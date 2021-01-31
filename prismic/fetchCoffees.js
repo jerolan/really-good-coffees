@@ -9,10 +9,18 @@ export default async function fetchCoffees() {
   );
 
   return query.results.map(({ data, id }) => {
+    const image = data.image.url
+      ? {
+          url: data.image.url,
+          height: data.image.dimensions.height,
+          width: data.image.dimensions.width,
+        }
+      : null;
+
     return {
       id,
+      image,
       href: data.href.url,
-      image: data.image,
       name: data.name[0].text,
       country: data.country,
       notes: data.notes.map(({ note }) => note),

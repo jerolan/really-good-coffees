@@ -1,3 +1,5 @@
+import Image from "./image";
+
 export default function GalleryItem({
   href,
   image,
@@ -10,7 +12,14 @@ export default function GalleryItem({
     <a href={href}>
       <div className="transition-all p-6 shadow-lg hover:shadow-2xl leading-none rounded-lg">
         <div className="w-full h-96 mb-6 bg-gray-200 overflow-hidden rounded-lg">
-          <img src={image} alt={name} className="object-cover h-full w-full" />
+          {image ? (
+            <Image
+              height={image.height}
+              width={image.width}
+              src={image.url}
+              alt={name}
+            />
+          ) : null}
         </div>
         <div>
           <div className="mb-2.5">

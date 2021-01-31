@@ -6,7 +6,7 @@ export default function Gallery({ coffees }) {
       {coffees.map((coffee) => {
         return (
           <GalleryItem
-            key={coffee.name}
+            key={coffee.id}
             href={coffee.href}
             image={coffee.image}
             name={coffee.name}

@@ -1,5 +1,5 @@
-import Hero from "../src/hero";
-import Gallery from "../src/gallery";
+import Hero from "../rgc/hero";
+import Gallery from "../rgc/gallery";
 
 import fetchCoffees from "../prismic/fetchCoffees";
 
@@ -17,6 +17,7 @@ export default function Home({ coffees }) {
 export async function getStaticProps({ params }) {
   const coffees = await fetchCoffees();
 
+  console.log({ coffees });
   return {
     props: {
       coffees,
