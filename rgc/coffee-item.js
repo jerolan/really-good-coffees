@@ -32,7 +32,6 @@ export default function GalleryItem({
           </div>
           <div className="mb-8">
             <div className="flex flex-wrap">
-              {console.log({ notes })}
               {notes.map((note) => (
                 <div className="rounded-lg bg-secondary-dark dark:bg-primary bg-opacity-10 dark:bg-opacity-100 px-2 mb-2 mr-2">
                   <p className="text-sm font-medium text-secondary-dark dark:text-primary-dark">
