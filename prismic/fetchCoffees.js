@@ -5,7 +5,8 @@ import createClient from "./createClient";
 export default async function fetchCoffees() {
   const client = createClient();
   const query = await client.query(
-    Prismic.Predicates.at("document.type", "coffees")
+    Prismic.Predicates.at("document.type", "coffees"),
+    { orderings : '[document.last_publication_date desc]' }
   );
 
   return query.results.map(({ data, id }) => {
