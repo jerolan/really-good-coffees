@@ -8,7 +8,7 @@ export default function Home({ coffees }) {
   return (
     <>
       <Head />
-      <div className="bg-light dark:bg-dark">
+      <div className="bg-white dark:bg-dark">
         <main className="container max-w-screen-md mx-auto px-4 ">
           <div className="mb-12 py-16">
             <Hero />

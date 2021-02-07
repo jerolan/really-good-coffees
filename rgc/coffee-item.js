@@ -1,6 +1,6 @@
 import Image from "./image";
 
-export default function GalleryItem({
+export default function CoffeeItem({
   href,
   image,
   name,
@@ -10,49 +10,65 @@ export default function GalleryItem({
 }) {
   return (
     <a href={href}>
-      <div className="transition-all p-6 shadow-lg hover:shadow-2xl leading-none rounded-lg  dark:bg-gray-900">
-        <div className="relative w-full h-96 mb-6 bg-secondary overflow-hidden rounded-lg">
-          {image ? (
-            <Image layout="fill" src={image.url} alt={name} objectFit="cover" />
-          ) : null}
+      {/* Card */}
+      <div className="bg-white dark:bg-gray-900 p-6 shadow-lg hover:shadow-2xl rounded-lg transition">
+        <div className="mb-6">
+          {/* Card Image */}
+          <div className="relative w-full h-96 bg-dark overflow-hidden rounded-lg">
+            {image ? (
+              <Image
+                alt={name}
+                layout="fill"
+                objectFit="cover"
+                src={image.url}
+              />
+            ) : null}
+          </div>
         </div>
-        <div>
+
+        {/* Card Body */}
+        <div className="text-dark dark:text-white">
           <div className="mb-2.5">
-            <p className="font-semibold dark:text-white">{country}</p>
+            {/* Card Subtitle */}
+            <p className="font-semibold">{country}</p>
           </div>
           <div className="mb-2.5">
-            <h3 className="text-4xl font-bold text-dark dark:text-white">
-              {name}
-            </h3>
+            {/* Card Title */}
+            <h3 className="text-4xl font-bold">{name}</h3>
           </div>
           <div className="mb-8">
+            {/* Card Badges */}
             <div className="flex flex-wrap">
               {notes.map((note) => (
-                <div className="rounded-lg bg-secondary-dark dark:bg-primary bg-opacity-10 dark:bg-opacity-100 px-2 mb-2 mr-2">
-                  <p className="text-sm font-medium text-secondary-dark dark:text-primary-dark">
+                <div className="bg-secondary bg-opacity-10 dark:bg-primary dark:bg-opacity-100 rounded-lg px-2 mb-2 mr-2">
+                  <p className="text-sm font-medium text-secondary dark:text-primary">
                     {note}
                   </p>
                 </div>
               ))}
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4 mb-6">
-            {properties.map((property) => (
-              <div>
-                <p className="text-sm dark:text-white">
-                  <span className="text-gray-500 dark:text-white">
-                    {property.label}:
-                  </span>{" "}
-                  {property.value}
-                </p>
-              </div>
-            ))}
+          <div className="mb-6">
+            {/* Card Properties */}
+            <div className="grid grid-cols-2 gap-4">
+              {properties.map((property) => (
+                <div>
+                  <p className="text-sm dark:text-white">
+                    <span className="text-gray-500 dark:text-white">
+                      {property.label}:
+                    </span>{" "}
+                    {property.value}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
           <div className="border-t border-gray-100 dark:border-gray-500 pt-4">
+            {/* Card Action */}
             <button
               aria-hidden="true"
               role="button"
-              className="transition-all bg-secondary-dark dark:bg-primary bg-opacity-10 text-secondary-dark dark:text-primary-dark py-2 px-3 rounded inline-flex items-center"
+              className="bg-secondary dark:bg-primary bg-opacity-10 text-secondary dark:text-primary py-2 px-3 rounded inline-flex items-center"
             >
               Revisa en la tienda
               <svg

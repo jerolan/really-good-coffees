@@ -1,6 +1,6 @@
 import CoffeeItem from "./coffee-item";
 
-export default function Gallery({ coffees }) {
+export default function CoffeeList({ coffees }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pb-16">
       {coffees.map((coffee) => {
