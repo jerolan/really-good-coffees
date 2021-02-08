@@ -1,4 +1,4 @@
-import Head from "../components/Head";
+import Head from "../components/head";
 import Hero from "../rgc/hero";
 import CoffeeList from "../rgc/coffee-list";
 
