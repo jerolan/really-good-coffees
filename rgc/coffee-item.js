@@ -11,10 +11,10 @@ export default function CoffeeItem({
   return (
     <a href={href}>
       {/* Card */}
-      <div className="bg-white dark:bg-gray-900 p-6 shadow-lg hover:shadow-2xl rounded-lg transition">
+      <div className="bg-white dark:bg-gray-900 p-6 shadow-lg hover:shadow-xl rounded-lg transition">
         <div className="mb-6">
           {/* Card Image */}
-          <div className="relative w-full h-96 bg-dark overflow-hidden rounded-lg">
+          <div className="relative w-full h-96 overflow-hidden rounded-lg hover:transform-gpu hover:scale-105 hover:-rotate-3 hover:shadow-2xl transition-all">
             {image ? (
               <Image
                 alt={name}
@@ -68,7 +68,7 @@ export default function CoffeeItem({
             <button
               aria-hidden="true"
               role="button"
-              className="bg-secondary dark:bg-primary bg-opacity-10 text-secondary dark:text-primary py-2 px-3 rounded inline-flex items-center"
+              className="bg-secondary focus:animate-pulse dark:bg-primary bg-opacity-10 text-secondary dark:text-primary py-2 px-3 rounded inline-flex items-center"
             >
               Revisa en la tienda
               <svg

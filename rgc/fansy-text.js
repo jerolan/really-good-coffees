@@ -1,6 +1,9 @@
 export default function FancyText({ children }) {
   return (
-    <p className="relative italic" style={{ marginBottom: 8, marginRight: 8 }}>
+    <p
+      className="relative italic leading-none"
+      style={{ marginBottom: 8, marginRight: 8 }}
+    >
       <span
         className="text-dark dark:text-light"
         style={{

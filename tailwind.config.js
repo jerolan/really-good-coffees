@@ -12,7 +12,10 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      transform: ["hover"],
+      animation: ["focus"],
+    },
   },
   plugins: [],
 };
