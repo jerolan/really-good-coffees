@@ -9,11 +9,11 @@ export default function Home({ coffees }) {
     <>
       <Head />
       <div className="dark:bg-dark leading-relaxed">
-        <main>
+        <main className="px-4">
           <div className="mb-12 py-16">
             <Hero />
           </div>
-          <div className="container max-w-screen-md mx-auto px-4">
+          <div className="container max-w-screen-md mx-auto">
             <CoffeeList coffees={coffees} />
           </div>
         </main>
