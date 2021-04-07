@@ -5,26 +5,6 @@ name: Node.js CI
 on: deployment_status
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [12.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
-    steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-      - run: yarn
-      - run: yarn build
-        env:
-          PRISMIC_ACCESS_TOKEN: ${{ secrets.PRISMIC_ACCESS_TOKEN }}
-          PRISMIC_API_ENDPOINT: ${{ secrets.PRISMIC_API_ENDPOINT }}
-
   lhci:
     if: github.event.deployment_status.state == 'success'
     name: Lighthouse CI
