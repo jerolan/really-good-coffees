@@ -11,7 +11,7 @@ export default function CoffeeItem({
   highlight,
 }) {
   return (
-    <a className="relative overflow-hidden" href={href}>
+    <a className="relative" href={href}>
       {highlight ? <Glow /> : null}
       {/* Card */}
       <div className="bg-white dark:bg-gray-900 p-6  shadow-lg hover:shadow-xl rounded-lg transition">
