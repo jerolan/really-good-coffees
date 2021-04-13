@@ -6,7 +6,7 @@ export default async function fetchCoffees() {
   const client = createClient();
   const query = await client.query(
     Prismic.Predicates.at("document.type", "coffees"),
-    { orderings : '[document.first_publication_date desc]' }
+    { orderings: "[document.first_publication_date desc]" }
   );
 
   return query.results.map(({ data, id }) => {
@@ -21,9 +21,10 @@ export default async function fetchCoffees() {
     return {
       id,
       image,
+      country: data.country,
+      highligh: Boolean(data.highligh),
       href: data.href.url,
       name: data.name[0].text,
-      country: data.country,
       notes: data.notes.map(({ note }) => note),
       properties: data.properties.map((property) => ({
         label: property.label,

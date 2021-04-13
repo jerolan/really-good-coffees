@@ -1,6 +1,6 @@
 import Head from "../components/head";
-import Hero from "../rg-coffees/hero";
-import CoffeeList from "../rg-coffees/coffee-list";
+import Hero from "../components/hero";
+import CoffeeList from "../components/coffee-list";
 
 import fetchCoffees from "../prismic/fetchCoffees";
 

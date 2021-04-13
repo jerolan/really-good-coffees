@@ -1,4 +1,5 @@
 import Image from "./image";
+import Glow from "./glow";
 
 export default function CoffeeItem({
   href,
@@ -7,11 +8,13 @@ export default function CoffeeItem({
   country,
   notes,
   properties,
+  highlight,
 }) {
   return (
-    <a href={href}>
+    <a className="relative overflow-hidden" href={href}>
+      {highlight ? <Glow /> : null}
       {/* Card */}
-      <div className="bg-white dark:bg-gray-900 p-6 shadow-lg hover:shadow-xl rounded-lg transition">
+      <div className="bg-white dark:bg-gray-900 p-6  shadow-lg hover:shadow-xl rounded-lg transition">
         <div className="mb-6">
           {/* Card Image */}
           <div className="relative w-full h-96 overflow-hidden rounded-lg hover:transform-gpu hover:scale-105 hover:-rotate-3 hover:shadow-2xl transition-all">

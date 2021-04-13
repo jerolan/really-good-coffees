@@ -6,12 +6,14 @@ export default function CoffeeList({ coffees }) {
       {coffees.map((coffee) => {
         return (
           <CoffeeItem
-            key={coffee.id}
+            country={coffee.country}
+            highligh={coffee.highligh}
             href={coffee.href}
             image={coffee.image}
+            key={coffee.id}
             name={coffee.name}
-            country={coffee.country}
             notes={coffee.notes}
+            highlight={coffee.highligh}
             properties={coffee.properties}
           />
         );
