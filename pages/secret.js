@@ -5,7 +5,7 @@ import Image from "../components/image";
 export default function Secret({ coffees }) {
   return (
     <>
-      <div className="bg-light relative h-screen">
+      <div className="bg-light relative min-h-screen">
         <Head title="Yellowme Plum" />
         <main className="pt-20 text-dark text-center">
           <h6 className="text-2xl md:text-4xl mb-16 animate__animated animate__fadeInDown">
