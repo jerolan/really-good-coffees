@@ -10,7 +10,7 @@ export default function Home({ coffees }) {
       <Head />
       <div className="dark:bg-dark leading-relaxed">
         <main className="px-4">
-          <div className="mb-12 py-16">
+          <div className="mb-12 py-16 animate__animated animate__fadeInDown">
             <Hero />
           </div>
           <div className="container max-w-screen-md mx-auto">
