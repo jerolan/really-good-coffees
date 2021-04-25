@@ -1,7 +1,6 @@
-import Image from "next/image";
-import Head from "../components/head";
-import FancyText from "../components/fansy-text";
 import Glow from "../components/glow";
+import Head from "../components/head";
+import Image from "../components/image";
 
 export default function Secret({ coffees }) {
   return (

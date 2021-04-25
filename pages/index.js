@@ -1,7 +1,6 @@
+import CoffeeList from "../components/coffee-list";
 import Head from "../components/head";
 import Hero from "../components/hero";
-import CoffeeList from "../components/coffee-list";
-
 import fetchCoffees from "../prismic/fetchCoffees";
 
 export default function Home({ coffees }) {

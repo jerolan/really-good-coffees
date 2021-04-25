@@ -18,14 +18,7 @@ export default function CoffeeItem({
         <div className="mb-6">
           {/* Card Image */}
           <div className="relative w-full h-96 overflow-hidden rounded-lg hover:transform-gpu hover:scale-105 hover:-rotate-3 hover:shadow-2xl transition-all">
-            {image ? (
-              <Image
-                alt={name}
-                layout="fill"
-                objectFit="cover"
-                src={image.url}
-              />
-            ) : null}
+            {image ? <Image alt={name} layout="fill" src={image.url} /> : null}
           </div>
         </div>
 
