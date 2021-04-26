@@ -5,13 +5,13 @@ import Image from "../components/image";
 export default function Secret({ coffees }) {
   return (
     <>
+      <Head title="Yellowme Plum" />
       <div className="bg-light relative min-h-screen">
-        <Head title="Yellowme Plum" />
-        <main className="pt-20 text-dark text-center">
+        <main className="pt-20 pb-36 text-dark text-center">
           <h6 className="text-2xl md:text-4xl mb-16 animate__animated animate__fadeInDown">
             Colombia - Antioquia
           </h6>
-          <h1 className="text-6xl md:text-8xl text-center font-bold italic mb-10 animate__animated animate__fadeInDown">
+          <h1 className="text-6xl md:text-8xl text-center font-bold italic mb-20 animate__animated animate__fadeInDown">
             Yellow<span className="italic">me</span> Plum
           </h1>
           <div className="flex justify-center mb-16 animate__animated animate__zoomIn">
