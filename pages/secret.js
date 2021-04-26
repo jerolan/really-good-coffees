@@ -18,7 +18,7 @@ export default function Secret({ coffees }) {
             <div className="relative " style={{ width: "fit-content" }}>
               <Glow opacity="lg" />
               <Image
-                src="/bolsa.png"
+                src={require("../images/bolsa.png")}
                 alt="Picture of the author"
                 width={287}
                 height={404}
@@ -27,7 +27,11 @@ export default function Secret({ coffees }) {
                 className="absolute transform -skew-y-6"
                 style={{ top: 140, left: 90 }}
               >
-                <Image src="/label.png" width={143} height={202} />
+                <Image
+                  src={require("../images/label.png")}
+                  width={143}
+                  height={202}
+                />
               </div>
             </div>
           </div>
