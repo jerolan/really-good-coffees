@@ -1,13 +1,14 @@
 .glow {
   filter: blur(160px);
   top: -100px;
-  background: conic-gradient(
-    from 230.29deg at 51.63% 52.16%,
-    #2400ff 0deg,
-    #0087ff 67.5deg,
-    #ff1d7a 198.75deg,
-    #f5381b 251.25deg,
-    #ff5335 301.88deg,
-    #691eff 360deg
+  background: rgb(36, 0, 255);
+  background: radial-gradient(
+    circle,
+    rgba(36, 0, 255, 1) 0%,
+    rgba(0, 135, 255, 1) 16%,
+    rgba(255, 29, 122, 1) 33%,
+    rgba(245, 56, 27, 1) 50%,
+    rgba(255, 83, 53, 1) 66%,
+    rgba(105, 30, 255, 1) 100%
   );
 }
