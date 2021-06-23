@@ -1,3 +1,5 @@
+import NextImage from "next/image";
+
 export default function Image({ width, height, ...props }) {
-  return <img {...props} style={{ width, height }} />;
+  return <NextImage {...props} style={{ width, height }} />;
 }
