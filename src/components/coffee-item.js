@@ -38,7 +38,10 @@ export default function CoffeeItem({
             {/* Card Badges */}
             <div className="flex flex-wrap">
               {notes.map((note) => (
-                <div className="bg-secondary bg-opacity-10 dark:bg-primary dark:bg-opacity-100 rounded-lg px-2 mb-2 mr-2">
+                <div
+                  key={note}
+                  className="bg-secondary bg-opacity-10 dark:bg-primary dark:bg-opacity-100 rounded-lg px-2 mb-2 mr-2"
+                >
                   <p className="text-sm font-medium text-secondary dark:text-primary">
                     {note}
                   </p>
@@ -50,7 +53,7 @@ export default function CoffeeItem({
             {/* Card Properties */}
             <div className="grid grid-cols-2 gap-4">
               {properties.map((property) => (
-                <div>
+                <div key={property.value}>
                   <p className="text-sm dark:text-white">
                     <span className="text-gray-500 dark:text-white">
                       {property.label}:
