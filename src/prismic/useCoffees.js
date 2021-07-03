@@ -7,15 +7,22 @@ const INITIAL_PAGE = 1;
 const PAGE_SIZE = 5;
 
 // useCoffees is a hook that will fetch the coffees from the Prismic API
-export default function useCoffees() {
+export default function useCoffees(initialState) {
   const {
     data: pages,
     error,
     size,
     setSize,
-  } = useSWRInfinite(getKey, (_, page, pageSize) => {
-    return fetchCoffees({ page, pageSize });
-  });
+    mutate,
+  } = useSWRInfinite(
+    getKey,
+    (_, page, pageSize) => {
+      return fetchCoffees({ page, pageSize });
+    },
+    { initialData: initialState }
+  );
+
+  useEffect(() => {}, [initialState]);
 
   // recursive increment page size
   useEffect(() => {
