@@ -1,11 +1,20 @@
+import useCoffees from "../prismic/useCoffees";
 import CoffeeItem from "./coffee-item";
 
-export default function CoffeeList({ coffees }) {
+// CoffeeList is a React component that displays a list of CoffeeItems.
+export default function CoffeeList() {
+  const [coffees, loading] = useCoffees();
+
+  if (coffees == null) {
+    return <>Loading...</>;
+  }
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pb-16 animate__animated animate__fadeInUp">
-      {coffees.map((coffee) => {
+      {coffees?.map((coffee) => {
         return (
           <CoffeeItem
+            key={coffee.id}
             country={coffee.country}
             highligh={coffee.highligh}
             href={coffee.href}

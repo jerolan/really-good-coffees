@@ -3,7 +3,7 @@ import Head from "../components/head";
 import Hero from "../components/hero";
 import fetchCoffees from "../prismic/fetchCoffees";
 
-export default function Home({ coffees }) {
+export default function Home() {
   return (
     <>
       <Head />
@@ -13,7 +13,7 @@ export default function Home({ coffees }) {
             <Hero />
           </div>
           <div className="container max-w-screen-md mx-auto">
-            <CoffeeList coffees={coffees} />
+            <CoffeeList />
           </div>
         </main>
       </div>
@@ -21,12 +21,12 @@ export default function Home({ coffees }) {
   );
 }
 
-export async function getStaticProps({ params }) {
-  const coffees = await fetchCoffees();
+// export async function getStaticProps({ params }) {
+//   const coffees = await fetchCoffees();
 
-  return {
-    props: {
-      coffees,
-    },
-  };
-}
+//   return {
+//     props: {
+//       coffees,
+//     },
+//   };
+// }

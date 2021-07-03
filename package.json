@@ -12,15 +12,19 @@
     "animate.css": "^4.1.1",
     "autoprefixer": "^10.2.3",
     "classnames": "^2.3.1",
+    "lodash": "^4.17.21",
     "next": "latest",
     "postcss": "^8.2.4",
     "prismic-reactjs": "^1.3.3",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "swr": "^0.4.1",
+    "swr": "^0.5.6",
     "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
-    "sharp": "^0.27.1"
+    "@types/node": "^16.0.0",
+    "@types/react": "^17.0.13",
+    "sharp": "^0.27.1",
+    "typescript": "^4.3.5"
   }
 }

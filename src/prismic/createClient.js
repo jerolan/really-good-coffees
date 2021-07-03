@@ -1,10 +1,10 @@
 import Prismic from "@prismicio/client";
 
-// Client method to query documents from the Prismic repo
+// createClient creates a new Prismic client
 export default function createClient(req) {
   return Prismic.client(
-    process.env.PRISMIC_API_ENDPOINT,
-    createClientOptions(req, process.env.PRISMIC_ACCESS_TOKEN)
+    process.env.NEXT_PUBLIC_PRISMIC_API_ENDPOINT,
+    createClientOptions(req, process.env.NEXT_PUBLIC_PRISMIC_ACCESS_TOKEN)
   );
 }
 
