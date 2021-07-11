@@ -35,5 +35,5 @@ export default function useCoffees(initialState) {
 
 function getKey(pageIndex, previousPageData) {
   if (previousPageData != null && !previousPageData.length) return null;
-  return ["coffeees", INITIAL_PAGE + pageIndex, PAGE_SIZE];
+  return ["coffees", INITIAL_PAGE + pageIndex, PAGE_SIZE];
 }
